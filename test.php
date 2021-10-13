@@ -14,7 +14,8 @@ if($con){
             $response[$i]['complete']= $row['complete'];
             $i++; 
         }
-        echo json_encode($response,JSON_PRETTY_PRINT);
+        // echo json_encode($response,JSON_PRETTY_PRINT);
+        $jsonobj = json_encode($response,JSON_PRETTY_PRINT);
     }
 }
 else{
